@@ -1,21 +1,68 @@
- .home_text{
-    position: relative;
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ #section1{
     color: white;
-    width: 60%;
-    left: 30px;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
 }
 
+#section2{
+    color: white;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+}
+
+#section3{
+    color: white;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+}
+
+#section4{
+    color: white;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+}
+
+#section5{
+    color: white;
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+}
 .home_name{
     position: relative;
     color: white;
     width: 30%;
-    top: 20px;
+    top: -10px;
     left: 30px;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes name {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .home_aboutMe_des{
-    height: 300px;
+    height: 200px;
+    left: 100px;
 }
 
 .home_aboutMe_des p {
@@ -29,11 +76,12 @@
  
 @keyframes heading {
     0% {top: -1000px;}
-    100% {top: 170px;}
+    100% {top: 140px;}
 }
 
 .home_aboutMe{
     font-size:1.25em;
+    left: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
     animation-name: content;
@@ -61,6 +109,48 @@
     100% {opacity: 1}
 } 
 
+.navigation {
+    position: fixed;
+    overflow: hidden;
+    width: 60%;
+    top: 15px;
+    left: 800px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    animation-name: navi;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} 
+
+li{
+    float: left;
+}
+
+@keyframes navi {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+a:hover {
+    opacity: 0.6;
+}
 
 
 body{
@@ -75,7 +165,7 @@ body{
 .linkedin {
     position: relative;
     left: 45px;
-    top: -44px;
+    top: -65px;
 }
 
 .linkedin:hover { 
@@ -85,7 +175,7 @@ body{
 .facebook {
     position: relative;
     left: 90px;
-    top: -89px;
+    top: -130px;
 }
 
 .facebook:hover { 
@@ -95,7 +185,7 @@ body{
 .twitter {
     position: relative;
     left: 135px;
-    top: -133px;
+    top: -193px;
 }
 
 .twitter:hover { 
@@ -105,7 +195,7 @@ body{
 .medium {
     position: relative;
     left: 185px;
-    top: -177px;
+    top: -257px;
 }
 
 .medium:hover { 
@@ -115,9 +205,11 @@ body{
 .instagram {
     position: relative;
     left: 230px;
-    top: -222px;
+    top: -322px;
 }
 
 .instagram:hover { 
     opacity: 0.6;    
 }
+
+
