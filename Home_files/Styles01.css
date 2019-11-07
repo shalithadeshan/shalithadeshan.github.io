@@ -9,7 +9,7 @@
 
  #section1{
     color: white;
-    height: 700px;
+    height: 900px;
     display: inline-block;
     width: 100%;
 }
@@ -61,7 +61,7 @@
     100% {opacity: 1;}
 }
 .home_aboutMe_des{
-    height: 200px;
+    height: 250px;
     left: 100px;
 }
 
@@ -94,6 +94,30 @@
     100% {left: 0;}
 }
 
+.about_me_title{
+    height: 200px;
+    left: 100px;
+}
+
+.about_me_title p {
+    font-size:3em;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.about_me{
+    font-size:1.25em;
+    left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
 .social_media {
     position: relative;
     opacity: 0;
@@ -110,7 +134,7 @@
 } 
 
 .navigation {
-    position: relative;
+    position: fixed;
     overflow: hidden;
     width: 60%;
     top: 15px;
@@ -212,4 +236,52 @@ body{
     opacity: 0.6;    
 }
 
+.contact p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    opacity: 0.7;
+}
 
+.address p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+.bg-success {
+    background-color: #eb0c0c!important;
+}
+
+.progress-bar-animated {
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+}
+
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ff7300;
+    transition: width .6s ease;
+}
