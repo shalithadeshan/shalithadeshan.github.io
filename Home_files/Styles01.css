@@ -45,7 +45,7 @@
     position: relative;
     color: white;
     width: 30%;
-    top: -10px;
+    top: -60px;
     left: 30px;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
@@ -110,7 +110,7 @@
 } 
 
 .navigation {
-    position: fixed;
+    position: relative;
     overflow: hidden;
     width: 60%;
     top: 15px;
