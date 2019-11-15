@@ -141,9 +141,8 @@
 } 
 
 .navigation {
-    position: fixed;
+    position: absolute;
     overflow: hidden;
-    width: 60%;
     top: 15px;
     left: 800px;
     font-size: 20px;
@@ -317,7 +316,7 @@ body{
 
 .title_bg{
     position: absolute;
-    top: 180%;
+    top: 1150px;
     left: 50%;
     left: 50vw;
     line-height: 12rem;
@@ -337,7 +336,7 @@ body{
 
 .title_bg_skills{
     position: absolute;
-    top: 290%;
+    top: 1850px;
     left: 50%;
     left: 50vw;
     line-height: 12rem;
@@ -356,7 +355,7 @@ body{
 
 .title_bg_pro{
     position: absolute;
-    top: 400%;
+    top: 2600px;
     left: 50%;
     left: 50vw;
     line-height: 12rem;
@@ -375,7 +374,7 @@ body{
 
 .title_bg_con{
     position: absolute;
-    top: 510%;
+    top: 3250px;
     left: 50%;
     left: 50vw;
     line-height: 12rem;
