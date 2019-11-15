@@ -42,10 +42,10 @@
     width: 100%;
 }
 .home_name{
-    position: relative;
+    position: absolute;
     color: white;
     width: 30%;
-    top: -60px;
+    top: 0px;
     left: 30px;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
@@ -61,14 +61,15 @@
     100% {opacity: 1;}
 }
 .home_aboutMe_des{
+    position: absolute;
     height: 250px;
-    left: 100px;
+    left: 50px;
 }
 
 .home_aboutMe_des p {
     font-size:3em;
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
+    position: absolute;
     animation: heading;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -79,11 +80,13 @@
     100% {top: 140px;}
 }
 
-.home_aboutMe{
+.home_aboutMe p{ 
+    top: 350px;
+    position: absolute;
     font-size:1.25em;
-    left: 30px;
+    left: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
+    position: absolute;
     animation-name: content;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -91,18 +94,20 @@
 
 @keyframes content{
     0% {left: -1000px;}
-    100% {left: 0;}
+    100% {left: 50px;}
 }
 
-.about_me_title{
+.about_me_title {
+    position: absolute;
     height: 200px;
-    left: 100px;
+    left: 50px;
 }
 
 .about_me_title p {
+    top: 0px;
     font-size:3em;
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
+    position: absolute;
     animation: heading;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -111,16 +116,18 @@
 .about_me{
     font-size:1.25em;
     left: 30px;
+    top: 1300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
+    position: absolute;
     animation-name: content;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
 .social_media {
-    position: relative;
+    position: absolute;
     opacity: 0;
+    left: 43px;
     animation-name: media;
     animation-duration: 3s;
     animation-delay: 2s;
@@ -182,14 +189,20 @@ body{
     background: linear-gradient(90deg, rgba(6,3,55,1) 0%, rgba(45,139,163,1) 100%);
 }
 
+.github {
+    position: absolute;
+    left: 0px;
+    top: 410px;
+}
+
 .github:hover{
     opacity: 0.6;
 }
 
 .linkedin {
-    position: relative;
+    position: absolute;
     left: 45px;
-    top: -65px;
+    top: 410px;
 }
 
 .linkedin:hover { 
@@ -197,9 +210,9 @@ body{
 }
 
 .facebook {
-    position: relative;
+    position: absolute;
     left: 90px;
-    top: -130px;
+    top: 410px;
 }
 
 .facebook:hover { 
@@ -207,9 +220,9 @@ body{
 }
 
 .twitter {
-    position: relative;
+    position: absolute;
     left: 135px;
-    top: -193px;
+    top: 410px;
 }
 
 .twitter:hover { 
@@ -217,9 +230,9 @@ body{
 }
 
 .medium {
-    position: relative;
+    position: absolute;
     left: 185px;
-    top: -257px;
+    top: 410px;
 }
 
 .medium:hover { 
@@ -227,9 +240,9 @@ body{
 }
 
 .instagram {
-    position: relative;
+    position: absolute;
     left: 230px;
-    top: -322px;
+    top: 410px;
 }
 
 .instagram:hover { 
@@ -237,15 +250,31 @@ body{
 }
 
 .contact p {
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     opacity: 0.7;
+    left: 50px;
+    top: 3200px;
 }
+.contact h1 {
+    position: absolute;
+    left: 50px;
+    top: 3150px;
+    }
 
 .address p {
+    position: absolute;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     opacity: 0.7;
+    left: 50px;
+    top: 3400px;
+}
+.address h1{
+    position: absolute;
+    left: 50px;
+    top: 3350px;
 }
 
 .progress {
@@ -284,4 +313,81 @@ body{
     white-space: nowrap;
     background-color: #ff7300;
     transition: width .6s ease;
+}
+
+.title_bg{
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    left: 50vw;
+    line-height: 12rem;
+    margin-bottom: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            transform: translateX(-50%) translateY(-50%) scale(1.2);
+    text-transform: uppercase;
+    opacity: 0.1;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 7rem;
+    letter-spacing: -0.075em;
+    z-index: -1; 
+}
+
+
+.title_bg_skills{
+    position: absolute;
+    top: 290%;
+    left: 50%;
+    left: 50vw;
+    line-height: 12rem;
+    margin-bottom: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            transform: translateX(-50%) translateY(-50%) scale(1.2);
+    text-transform: uppercase;
+    opacity: 0.1;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 7rem;
+    letter-spacing: -0.075em;
+    z-index: -1; 
+}
+
+.title_bg_pro{
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    left: 50vw;
+    line-height: 12rem;
+    margin-bottom: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            transform: translateX(-50%) translateY(-50%) scale(1.2);
+    text-transform: uppercase;
+    opacity: 0.1;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 7rem;
+    letter-spacing: -0.075em;
+    z-index: -1; 
+}
+
+.title_bg_con{
+    position: absolute;
+    top: 510%;
+    left: 50%;
+    left: 50vw;
+    line-height: 12rem;
+    margin-bottom: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            transform: translateX(-50%) translateY(-50%) scale(1.2);
+    text-transform: uppercase;
+    opacity: 0.1;
+    font-weight: bold;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 7rem;
+    letter-spacing: -0.075em;
+    z-index: -1; 
 }
