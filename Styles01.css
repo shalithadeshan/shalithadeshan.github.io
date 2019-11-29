@@ -33,20 +33,19 @@ img{
 
 header{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .top-nav{
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: -100vh;
+    top: -100vh; 
     background-color: #16162d;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
 }
-
 .nav-list{
     list-style: none;
     width: 100%;
@@ -61,7 +60,7 @@ li{
 }
 
 .nav-link{
-    font-family: sans-serif;
+    font-family: 'The Historia Demo';
     font-size: 5rem;
     padding: 1rem;
 }
@@ -112,7 +111,7 @@ li{
 }
 
 .open .bar.start{
-    transform: rotate(-450deg) translate(.8rem);
+    transform: rotate(-450deg) translateX(.8rem);
 }
 
 .bar.end{
@@ -124,6 +123,7 @@ li{
 .open .bar.end{
     transform: rotate(-450deg) translateX(-.8rem);
 }
+
 
 
 
