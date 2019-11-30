@@ -41,6 +41,7 @@ header{
     height: 100vh;
     position: fixed;
     top: -100vh; 
+    z-index: 50;
     background-color: #16162d;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -124,21 +125,144 @@ li{
     transform: rotate(-450deg) translateX(-.8rem);
 }
 
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.landing-text h1{
+    font-size: 20rem;
+    font-family: 'The Historia Demo', sans-serif;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+
+.landing-text h6{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
 
 
 
+.about-heading h1{
+    font-size: 10rem;
+    opacity: .3
+    ;
+}
 
+.about-heading h6{
+    font-size: 2rem;
+    font-weight: 300;
+}
 
+.profile-img{
+    flex: 1;
+    margin-right: 5rem;
+}
 
+.about-details{
+    flex: 1;
+}
 
+.social-media{
+    margin-top: 5rem;
+}
 
+.social-media i{
+    font-size: 5rem;
+    transition: color 650ms;
+}
 
+.fa-github-square:hover{
+    color: black;
+}
 
+.fa-facebook-square:hover{
+    color: #4267b2;
+}
 
+.fa-twitter-square:hover{
+    color: #38a1f3;
+}
 
+.col-lg-4{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+    padding: 30px;
+}
 
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 
+.section-heading{
+    text-align: center;
+    margin-bottom: 10rem;
+}
 
+.section-heading h1{
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+
+.section-heading h1::after{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    bottom: -1rem;
+}
+.section-heading h6{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
 
 
 
@@ -176,7 +300,6 @@ li{
     -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
-    text-align: center;
     white-space: nowrap;
     background-color: #ff7300;
     transition: width .6s ease;
