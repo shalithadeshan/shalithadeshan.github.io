@@ -136,8 +136,8 @@ li{
 }
 
 .landing-text h1{
-    font-size: 20rem;
-    font-family: 'The Historia Demo', sans-serif;
+    font-size: 10rem;
+    font-family: sans-serif;
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -224,7 +224,7 @@ li{
 }
 
 section{
-    padding: 6rem;
+    padding: 6rem 0;
 }
 
 .section-heading{
@@ -427,6 +427,7 @@ section{
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
 .up i{
@@ -486,4 +487,88 @@ section{
     white-space: nowrap;
     background-color: #ff7300;
     transition: width .6s ease;
+}
+
+
+@media  screen and (max-width: 768px){
+    body{
+        background: url("images/sitebg2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .landing-text h6{
+        font-size: 1.7rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    li{
+        margin: 2rem 0;
+    }
+
+    .nav-list{
+        font-size: 4.5rem;
+    }
+
+    .about-heading h1{
+        font-size: 8rem;
+    }
+
+    .section-heading h1{
+        font-size: 3rem;
+    }
+
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+
+    .timeline .date::before{
+        left: -20rem;
+    }
+    .timeline .date::after{
+        left: -5.9rem;
+    }
+}
+
+@media screen and (max-wdith: 600px){
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1{
+        font-size: 8rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.4rem;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .profile-img{
+         margin: 0 0 7rem 0;
+    }
+
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    
 }
