@@ -570,5 +570,15 @@ section{
         flex-direction: column;
     }
 
-    
+    .timeline p{
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.4rem;
+    }
+
+    .up{
+        right: 2rem;
+    }
 }
