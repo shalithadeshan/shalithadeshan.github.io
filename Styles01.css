@@ -61,9 +61,9 @@ li{
 }
 
 .nav-link{
-    font-family: 'The Historia Demo';
+    font-family: sans-serif;
     font-size: 5rem;
-    padding: 1rem;
+    padding: 0.3rem;
 }
 
 .nav-link:hover,
@@ -206,6 +206,8 @@ li{
     color: #38a1f3;
 }
 
+
+
 .col-lg-4{
     margin-top: 10rem;
     display: grid;
@@ -296,6 +298,11 @@ section{
     margin-bottom: 0;
 }
 
+.portfolio-img{
+    width: 50rem;
+    flex: 1;
+}
+
 .portfolio-description{
     flex: 1;
 }
@@ -325,6 +332,8 @@ section{
     color: #2f67cd;
     
 }
+ 
+
 
 .timeline ul{
     border-left: 4px solid #ffe838;
@@ -490,7 +499,7 @@ section{
 }
 
 
-@media  screen and (max-width: 768px){
+@media  screen and (max-width: 1168px){
     body{
         background: url("images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
@@ -540,7 +549,7 @@ section{
     }
 }
 
-@media screen and (max-wdith: 600px){
+@media  screen and (max-width: 600px){
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -558,7 +567,7 @@ section{
         font-size: 3.5rem;
     }
 
-    .about-container{
+    .about .container{
         flex-direction: column;
     }
 
@@ -568,6 +577,16 @@ section{
 
     .portfolio-item{
         flex-direction: column;
+    }
+
+    .portfolio-img{
+        margin: 0 2rem 2rem 2rem;
+        order: 1;
+    }
+
+    .portfolio-description{
+        margin: 0;
+        order: 2;
     }
 
     .timeline p{
