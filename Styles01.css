@@ -458,7 +458,9 @@ section{
 }
 
 .copyright p{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    color: white;
+
 }
 
 @keyframes pulse{
