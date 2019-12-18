@@ -218,6 +218,24 @@ li{
     color: #38a1f3;
 }
 
+.button {
+    background-color: #0356b6;
+    border: none;
+    border-radius: .8rem;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 173px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: ;
+
+}
 
 
 .col-lg-4{
@@ -416,7 +434,7 @@ section{
     padding: 5rem;
     list-style: none;
     text-align: left;
-    width: 70%;
+    width: 80%;
 }
 
 .personal h1{
