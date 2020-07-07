@@ -1,53 +1,52 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
     font-family: sans-serif;
     color: #000000;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background: url("images/sitebg.png") no-repeat center fixed;
     background-size: cover;
 }
 
-a{
+a {
     text-decoration: none;
     color: #eee;
 }
 
-p{
-   font-size: 1.8rem;
-   font-weight: 300; 
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 
-img{
+img {
     width: 100%;
 }
 
-header{
-    width: 100%;
-    height: 100vh;
-}
-
-.top-nav{
+header {
     width: 100%;
     height: 100vh;
+}
+
+.top-nav {
+    width: 100%;
+    height: 50vh;
     position: fixed;
-    top: -100vh; 
-    z-index: 50;
+    top: -80vh;
+    z-index: 60;
     background-color: #0356b6;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    transition: all 650ms cubic-bezier(1,0,0,1);
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     width: 100%;
     height: 100%;
@@ -56,31 +55,43 @@ header{
     align-items: center;
 }
 
-li{
+.nav-list-1 {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    align-items: left;
+}
+
+li {
     margin: 0 2rem;
 }
 
-.nav-link{
+.nav-link {
     font-family: sans-serif;
     font-size: 5rem;
     padding: 0.3rem;
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus {
     background: linear-gradient(to top, #006be6, #00f3e7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.top-nav.open{
+.top-nav.open {
     top: 0;
     border-radius: initial;
 }
 
-.menu-toggler{
-    position: absolute;
-    top: 5rem;
+.menu-bar h1 {
+    display: none;
+}
+
+.menu-toggler {
+    position: fixed;
+    top: 2rem;
     right: 5rem;
     width: 5rem;
     height: 4rem;
@@ -92,40 +103,41 @@ li{
     transition: trasform 650ms ease-out;
 }
 
-.menu-toggler.open{
+.menu-toggler.open {
     transform: rotate(-45deg);
 }
 
-.bar{
+.bar {
     background: linear-gradient(to right, #006be6, #00f3e7);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
 }
-.bar.half{
+
+.bar.half {
     width: 50%;
 }
 
-.bar.start{
+.bar.start {
     transform-origin: right;
     transition: trasform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.open .bar.start{
+.open .bar.start {
     transform: rotate(-450deg) translateX(.8rem);
 }
 
-.bar.end{
+.bar.end {
     align-self: flex-end;
     transform-origin: left;
     transition: trasform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.open .bar.end{
+.open .bar.end {
     transform: rotate(-450deg) translateX(-.8rem);
 }
 
-.landing-text{
+.landing-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -135,7 +147,7 @@ li{
     z-index: 1;
 }
 
-.landing-text h1{
+.landing-text h1 {
     font-size: 10rem;
     font-family: sans-serif;
     background: linear-gradient(to top, #006be6, #00f3e7);
@@ -145,7 +157,7 @@ li{
     user-select: none;
 }
 
-.landing-text h6{
+.landing-text h6 {
     font-size: 2rem;
     font-weight: 300;
 }
@@ -156,65 +168,62 @@ li{
     justify-content: center;
 }
 
-.about-heading{
+.about-heading {
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6rem;
 }
 
-
-
-.about-heading h1{
+.about-heading h1 {
     font-size: 10rem;
-    opacity: .3
-    ;
+    opacity: .3;
 }
 
-.about-heading h6{
+.about-heading h6 {
     font-size: 2rem;
     font-weight: 300;
 }
 
-.profile-img{
+.profile-img {
     flex: 1;
     margin-right: 5rem;
 }
 
-.about-details{
+.about-details {
     flex: 1;
 }
 
-.social-media{
+.social-media {
     margin-top: 5rem;
 }
 
-.social-media i{
+.social-media i {
     font-size: 5rem;
     transition: color 650ms;
 }
 
-.fa-github-square{
+.fa-github-square {
     color: black;
 }
 
-.fa-github-square:hover{
+.fa-github-square:hover {
     color: green;
 }
 
-.fa-facebook-square{
+.fa-facebook-square {
     color: black;
 }
 
-.fa-facebook-square:hover{
+.fa-facebook-square:hover {
     color: #4267b2;
 }
 
-.fa-twitter-square{
+.fa-twitter-square {
     color: black;
 }
 
-.fa-twitter-square:hover{
+.fa-twitter-square:hover {
     color: #38a1f3;
 }
 
@@ -234,11 +243,9 @@ li{
     justify-content: center;
     align-items: center;
     width: ;
-
 }
 
-
-.col-lg-4{
+.col-lg-4 {
     margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -247,7 +254,7 @@ li{
     padding: 30px;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 120rem;
     height: 100%;
@@ -255,16 +262,16 @@ li{
     position: relative;
 }
 
-section{
+section {
     padding: 6rem 0;
 }
 
-.section-heading{
+.section-heading {
     text-align: center;
     margin-bottom: 10rem;
 }
 
-.section-heading h1{
+.section-heading h1 {
     font-size: 3.5rem;
     color: black;
     text-transform: uppercase;
@@ -274,7 +281,7 @@ section{
 }
 
 .section-heading h1::before,
-.section-heading h1::after{
+.section-heading h1::after {
     content: '';
     position: absolute;
     bottom: -.5rem;
@@ -283,73 +290,76 @@ section{
     background-color: black;
 }
 
-.section-heading h1::before{
+.section-heading h1::before {
     width: 10rem;
     height: 3px;
     border-radius: .8rem;
 }
 
-.section-heading h1::after{
+.section-heading h1::after {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
     bottom: -1rem;
 }
-.section-heading h6{
+
+.section-heading h6 {
     font-size: 1.6rem;
     font-weight: 300;
 }
 
-.has-margin-right{
+.has-margin-right {
     margin-right: 5rem;
 }
 
-.skill h1{
+.skill h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
 
-.skill h3{
+.skill h3 {
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
 
+
 /*not yet*/
 
-.portfolio-item{
+.portfolio-item {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.portfolio-item:last-child{
+.portfolio-item:last-child {
     margin-bottom: 0;
 }
 
-.portfolio-img{
+.portfolio-img {
     width: 50rem;
     flex: 1;
 }
 
-.portfolio-description{
+.portfolio-description {
     flex: 1;
 }
 
-.portfolio-description h1{
+.portfolio-description h1 {
     font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0;
 }
-.portfolio-description h6{
+
+.portfolio-description h6 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
     opacity: 0.7;
 }
 
-.portfolio-description .cta{
+.portfolio-description .cta {
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.5rem;
@@ -358,14 +368,11 @@ section{
     transition: color 650ms;
 }
 
-.portfolio-description .cta:hover{
+.portfolio-description .cta:hover {
     color: #0356b6;
-    
 }
- 
 
-
-.timeline ul{
+.timeline ul {
     border-left: 4px solid #0356b6;
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
@@ -377,7 +384,7 @@ section{
     width: 70%;
 }
 
-.timeline h1{
+.timeline h1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -385,37 +392,36 @@ section{
     opacity: 0.5;
 }
 
-.timeline .date{
+.timeline .date {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
 }
 
-.timeline .date:last-of-type{
+.timeline .date:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
 }
 
 .timeline .date::before,
-.timeline .date::after{
+.timeline .date::after {
     position: absolute;
     display: block;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.timeline .date::before{
+.timeline .date::before {
     content: attr(data-date);
     left: -21rem;
     text-align: right;
     min-width: 12rem;
     font-size: 1.5rem;
-
 }
 
-.timeline .date::after{
+.timeline .date::after {
     content: '';
     box-shadow: 0 0 0 4px #00f3e7;
     border-radius: 100%;
@@ -425,7 +431,7 @@ section{
     background-color: #000000;
 }
 
-.personal{
+.personal {
     border-left: 4px solid #0356b6;
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
@@ -437,18 +443,18 @@ section{
     width: 80%;
 }
 
-.personal h1{
+.personal h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
 
-.personal h3{
+.personal h3 {
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
 
-.copyright{
+.copyright {
     width: 100%;
     text-align: center;
     background-color: #0356b6;
@@ -456,7 +462,7 @@ section{
     position: relative;
 }
 
-.up{
+.up {
     position: absolute;
     width: 5rem;
     height: 5rem;
@@ -469,26 +475,25 @@ section{
     cursor: pointer;
 }
 
-.up i{
+.up i {
     color: #16162d;
     font-size: 2rem;
     margin: auto;
 }
 
-.copyright p{
+.copyright p {
     font-size: 1.7rem;
     color: white;
-
 }
 
-@keyframes pulse{
-    0%{
+@keyframes pulse {
+    0% {
         box-shadow: 0 0 0 0 rgba(8, 6, 160, 0.99);
     }
-    70%{
+    70% {
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
     }
-    100%{
+    100% {
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
 }
@@ -513,7 +518,7 @@ section{
 }
 
 .progress-bar-striped {
-    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem;
 }
 
@@ -531,11 +536,28 @@ section{
 }
 
 
-@media  screen and (max-width: 1168px){
+/* @media  screen and (max-width: 1168px){
     body{
         background: url("images/sitebg.png") no-repeat center fixed;
         background-size: cover;
     }
+
+    .menu-bar{
+		width: 100%;
+    	text-align: left;
+    	background-color: #0356b6;
+    	padding: 3rem 0;
+    	position: fixed;
+	}
+
+    .menu-bar h1{
+		font-size: 3rem;
+   		color: white;
+   		text-transform: uppercase;
+   		margin-left: 2rem;
+   		display: block;
+	}
+
 
     .landing-text h6{
         font-size: 1.7rem;
@@ -579,9 +601,10 @@ section{
     .timeline .date::after{
         left: -5.9rem;
     }
-}
+} */
 
-@media  screen and (max-width: 600px){
+
+/* @media  screen and (max-width: 600px){
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -638,4 +661,4 @@ section{
     .up{
         right: 2rem;
     }
-}
+} */
