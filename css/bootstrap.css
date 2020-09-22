@@ -70,7 +70,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: #e0e5ec;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10635,3 +10635,38 @@ section {
 
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+/*My CSS */
+
+.neumorphism_section_heading {
+    position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #e0e5ec;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 5px 5px;
+    font-family: 600;
+    color: rgb(78, 78, 78);
+    line-height: 60px;
+}
+
+.neumorphism_contact {
+    position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #e0e5ec;
+    border-radius: 16px;
+    border: none;
+    box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6), inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+    width: 75%;
+    padding: 5px 5px;
+    color: rgb(78, 78, 78);
+    line-height: 60px;
+    font-size: 50pt;
+}
