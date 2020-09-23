@@ -10664,7 +10664,7 @@ section {
     border-radius: 16px;
     border: none;
     box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6), inset -9px -9px 16px rgba(255, 255, 255, 0.5);
-    width: 75%;
+    width: 100%;
     padding: 5px 5px;
     color: rgb(78, 78, 78);
     line-height: 60px;
