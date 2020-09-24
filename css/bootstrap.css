@@ -10680,8 +10680,56 @@ section {
     border-radius: 16px;
     border: none;
     box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-    width: 13%;
+    width: 170px;
     font-family: 600;
     color: rgb(78, 78, 78);
     line-height: 35px;
+}
+
+.neumorphism_loader {
+    position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    background-color: #e0e5ec;
+    border-radius: 40px;
+    border: none;
+    width: auto;
+    display: grid;
+    align-items: center;
+    height: 400px;
+    font-family: 600;
+    color: rgb(78, 78, 78);
+    line-height: 35px;
+}
+
+.neumorphism_loader h3 {
+    margin: 0 10px 20px;
+    font-size: 20px;
+    text-align: end;
+}
+
+.progress_loader {
+    height: 20px;
+    width: auto;
+    border-radius: 40px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.in-loader {
+    position: relative;
+    left: 0;
+    height: 20px;
+    width: 80%;
+    border-radius: 40px;
+    animation-name: anim;
+    animation-duration: 4s;
+}
+
+@keyframes anim {
+    from {
+        width: 0%;
+    }
 }

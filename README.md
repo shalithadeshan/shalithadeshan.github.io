@@ -14,3 +14,13 @@ My Personal WEB SITE...!
 
 <h3>24/07/2020</h3>
 <li><em>change button</em></li>
+
+<h3>22/09/2020</h3>
+<li><em>Add neumorphism to section heading</em></li>
+
+<h3>23/09/2020</h3>
+<li><em>Add neumorphism to contact area and optimize to mobile view</em></li>
+<li><em>Add neumorphism to nav bar</em></li>
+
+<h3>24/09/2020</h3>
+<li><em></em></li>
