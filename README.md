@@ -1,5 +1,9 @@
 # shalithadeshan.github.io
-My Personal WEB SITE...!
+This is My Personal WEB SITE...! CODE 
+
+
+<h2>In here I used HTML, Bootstrap CSS, JavaScript as languages also my text editer was VS Code and Sublime text.</h2>
+<br>
 
 <P>18/12/2019 commited version 1.0</P>
 
@@ -23,4 +27,5 @@ My Personal WEB SITE...!
 <li><em>Add neumorphism to nav bar</em></li>
 
 <h3>24/09/2020</h3>
-<li><em></em></li>
+<li><em>Add neumorphism to skills section</em></li>
+<li><em>Add neumorphism to progress bar</em></li>
