@@ -37,12 +37,13 @@ header {
 }
 
 .top-nav {
+    /*changing navigation clr*/
     width: 100%;
     height: 50vh;
     position: fixed;
     top: -80vh;
     z-index: 60;
-    background-color: #0356b6;
+    background-color: #8533ff;
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
