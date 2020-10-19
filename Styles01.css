@@ -53,14 +53,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}s
 
 .nav-list-1 {
     list-style: none;
     width: 100%;
     height: 100%;
     justify-content: left;
-    align-items: left;
 }
 
 li {
@@ -242,7 +241,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: ;
 }
 
 .col-lg-4 {

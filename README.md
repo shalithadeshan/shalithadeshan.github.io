@@ -2,7 +2,7 @@
 This is My Personal WEB SITE...! CODE 
 
 
-<h2>In here I used HTML, Bootstrap CSS, JavaScript as languages also my text editer was VS Code and Sublime text.</h2>
+<h2>In here I used HTML, Bootstrap CSS, JavaScript as languages also my text editer was VS Code, Sublime text and intelliJ IDEA.</h2>
 <br>
 
 <P>18/12/2019 commited version 1.0</P>
