@@ -29,3 +29,6 @@ This is My Personal WEB SITE...! CODE
 <h3>24/09/2020</h3>
 <li><em>Add neumorphism to skills section</em></li>
 <li><em>Add neumorphism to progress bar</em></li>
+
+<h3>22/10/2020</h3>
+<li>change footer</li>
