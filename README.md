@@ -32,3 +32,10 @@ This is My Personal WEB SITE...! CODE
 
 <h3>22/10/2020</h3>
 <li>change footer</li>
+
+<h3>28/10/2020</h3>
+<Li>Move contact to separate page</Li>
+
+<h3>29/10/2020</h3>
+<li>Do changes to skills</li>
+<li>finalize contact page</li>

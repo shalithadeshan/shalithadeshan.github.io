@@ -10733,3 +10733,12 @@ section {
         width: 0%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .portfolio-description {
+        order: 2;
+    }
+    .portfolio-img {
+        order: 1;
+    }
+}
