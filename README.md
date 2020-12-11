@@ -39,3 +39,7 @@ This is My Personal WEB SITE...! CODE
 <h3>29/10/2020</h3>
 <li>Do changes to skills</li>
 <li>finalize contact page</li>
+
+<h3>11/12/2020</h3>
+<li>Add favicon to site</li>
+<li>Change order for small screen sizes</li>
