@@ -30,7 +30,7 @@ This is My Personal WEB SITE...! CODE
 <li><em>Add neumorphism to skills section</em></li>
 <li><em>Add neumorphism to progress bar</em></li>
 
-<h3>22/10/2020</h3>
+<h3>22/10/2020</h3>A
 <li>change footer</li>
 
 <h3>28/10/2020</h3>
@@ -43,3 +43,7 @@ This is My Personal WEB SITE...! CODE
 <h3>11/12/2020</h3>
 <li>Add favicon to site</li>
 <li>Change order for small screen sizes</li>
+
+<h3>17/12/2020</h3>
+<li>change profile picture</li>
+<li>do modification to the skills icons and do animation</li>
