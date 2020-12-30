@@ -47,3 +47,6 @@ This is My Personal WEB SITE...! CODE
 <h3>17/12/2020</h3>
 <li>change profile picture</li>
 <li>do modification to the skills icons and do animation</li>
+
+<h3>30/12/2020</h3>
+<li>change footer and add other skills</li>

@@ -10671,20 +10671,6 @@ section {
     font-size: 50pt;
 }
 
-.neumorphism_NabBar_Name {
-    position: relative;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #e0e5ec;
-    border-radius: 16px;
-    border: none;
-    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-    width: 170px;
-    font-family: 600;
-    color: rgb(78, 78, 78);
-    line-height: 35px;
-}
 
 .neumorphism_loader {
     position: relative;
@@ -10732,4 +10718,17 @@ section {
     from {
         width: 0%;
     }
+}
+
+.neumorphism_icon {
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #e0e5ec;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    width: 170px;
+    color: rgb(78, 78, 78);
+    line-height: 35px;
 }
