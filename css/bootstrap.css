@@ -10732,3 +10732,18 @@ section {
     color: rgb(78, 78, 78);
     line-height: 35px;
 }
+
+.up_button {
+    width: 3rem;
+    height: 3rem;
+    background-color:#eee;
+    border-radius: 100%;
+    float: right;
+    margin-top: -45px;
+    margin-right: 20px;
+}
+
+.up_button i{
+    color: #221e3f;
+    font-size:2rem;
+}

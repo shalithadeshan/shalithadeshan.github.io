@@ -50,3 +50,8 @@ This is My Personal WEB SITE...! CODE
 
 <h3>30/12/2020</h3>
 <li>change footer and add other skills</li>
+
+<h3>01/01/2021</h3>
+<li>create Scroll top button</li>
+<li>collapse toggle menu</li>
+<li>Done Version 2.0</li>
